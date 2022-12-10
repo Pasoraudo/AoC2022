@@ -1,32 +1,31 @@
 with open('./data/day5.txt', 'r') as f:
     data = f.read().split('\n\n')
-crates = []
+cratesList = [] # lista de cratesList
 lista = data[0].split('\n')
 lista.pop()
 aux = data[0].split('\n')[-1]
-for i in aux:
-    if i == ' ':
+for i, j in enumerate(aux):
+    if not j.isdigit():
         continue
-    pos = int(i)
-    x = aux.find(i)
-    aux2 = []
+    j = int(j)
+    crates = []
     for j in lista:
-        if j[x] != ' ':
-            aux2.append(j[x])
-    crates.append(aux2) 
+        if j[i].isalpha():
+            crates.append(j[i])
+    cratesList.append(crates) 
 steps = []
 for i in data[1].split('\n'):
     aux = i.replace('move','').replace('from','').replace('to','').replace(' ','')
     steps.append((int(aux[:-2]), int(aux[-2]), int(aux[-1]))) 
-crates2 = crates.copy()
+cratesList2 = cratesList.copy()
 for i in steps:
     #part 1
-    blocks = crates[i[1] - 1][:i[0]]
-    crates[i[1] - 1] = crates[i[1] - 1][i[0]:]
-    crates[i[2] - 1] = list(reversed(blocks)) + crates[i[2] - 1]
+    blocks = cratesList[i[1] - 1][:i[0]]
+    cratesList[i[1] - 1] = cratesList[i[1] - 1][i[0]:]
+    cratesList[i[2] - 1] = list(reversed(blocks)) + cratesList[i[2] - 1]
     #part 2
-    blocks2 = crates2[i[1] - 1][:i[0]]
-    crates2[i[1] - 1] = crates2[i[1] - 1][i[0]:]
-    crates2[i[2] - 1] = blocks + crates2[i[2] - 1]
-print('Problema 1:', ''.join([i[0] if i != [] else '' for i in crates]))
-print('Problema 2:', ''.join([i[0] if i != [] else '' for i in crates2]))
+    blocks2 = cratesList2[i[1] - 1][:i[0]]
+    cratesList2[i[1] - 1] = cratesList2[i[1] - 1][i[0]:]
+    cratesList2[i[2] - 1] = blocks + cratesList2[i[2] - 1]
+print('Problema 1:', ''.join([i[0] if i != [] else '' for i in cratesList]))
+print('Problema 2:', ''.join([i[0] if i != [] else '' for i in cratesList2]))
