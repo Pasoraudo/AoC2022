@@ -1,7 +1,7 @@
 def allDiferentChar(data, long, i):
     return long == len(set(data[i:i+long]))
     
-with open('./data/day6.txt', 'r') as f:
+with open('./AoCdata/day6.txt', 'r') as f:
     data = f.read()
 long1, long2 = 4, 14
 prob1 = 0

@@ -1,4 +1,4 @@
-with open('./data/day7.txt', 'r') as f:
+with open('./AoCdata/day7.txt', 'r') as f:
     data = f.read().split('\n')
 i = 1
 directories = {'/': 0}

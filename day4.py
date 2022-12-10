@@ -1,4 +1,4 @@
-with open('./data/day4.txt', 'r') as f:
+with open('./AoCdata/day4.txt', 'r') as f:
     data = f.read().split()
 res = 0
 res2 = 0

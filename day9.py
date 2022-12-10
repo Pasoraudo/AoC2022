@@ -1,5 +1,5 @@
 import math
-with open('./data/day9.txt', 'r') as f:
+with open('./AoCdata/day9.txt', 'r') as f:
     data = f.read().split('\n')
 data = [(i[0], int(i[2:])) for i in data]
 def rope_movements(rope):
@@ -19,7 +19,7 @@ def rope_movements(rope):
                         rope[i][0] = rope[i][0] + directions[dif][0]
                         rope[i][1] = rope[i][1] + directions[dif][1]
                     elif math.pow(dif[0], 2) + math.pow(dif[1], 2) > 2:
-                        rope[i][0] = rope[i][0] + int(dif[0] / abs(dif[0]))
+                        rope[i][0] = rope[i][0] + sing(int(dif[0]))
                         rope[i][1] = rope[i][1] + int(dif[1] / abs(dif[1]))
                     i += 1
                 if rope[-1] not in historial:

@@ -1,5 +1,5 @@
 import math
-with open('./data/day10.txt', 'r') as f:
+with open('./AoCdata/day10.txt', 'r') as f:
     instructions = f.read().split('\n')
 cycle = 0
 strength = 0
