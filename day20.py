@@ -9,7 +9,7 @@ def desencriptar(code, data):
     return code, save_0
 
 
-with open('./data/day20.txt', 'r') as f:
+with open('./AoCdata/2022/day20.txt', 'r') as f:
     data = f.read().split('\n')
 data = [int(e) for e in data]
 code = [(i, e) for i, e in enumerate(data)]

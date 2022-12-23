@@ -1,4 +1,4 @@
-with open('./AoCdata/day1.txt', 'r') as f:
+with open('./AoCdata/2022/day1.txt', 'r') as f:
     data = f.read().split('\n\n')
 data = [list(map(int, line.split())) for line in data]
 calories = sorted(list(map(sum, data)), reverse=True)

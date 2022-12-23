@@ -1,5 +1,5 @@
 import numpy as np
-with open('./AoCdata/day8.txt', 'r') as f:
+with open('./AoCdata/2022/day8.txt', 'r') as f:
     data = f.read().split('\n')
 data = np.array([list(map(int, line)) for line in data])
 X, Y = np.shape(data)

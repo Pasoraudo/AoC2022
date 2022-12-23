@@ -1,4 +1,4 @@
-with open('./AoCdata/day5.txt', 'r') as f:
+with open('./AoCdata/2022/day5.txt', 'r') as f:
     data = f.read().split('\n\n')
 cratesList = [] # lista de cratesList
 lista = data[0].split('\n')

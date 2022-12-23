@@ -9,7 +9,7 @@ def suma(a, b):
 def pow(a):
     return a * a
 
-with open('./AoCdata/day11.txt', 'r') as f:
+with open('./AoCdata/2022/day11.txt', 'r') as f:
     data = f.read().split('\n\n')
 monkeys = []
 mcm = 1

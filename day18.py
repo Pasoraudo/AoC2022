@@ -2,7 +2,7 @@ from mpl_toolkits import mplot3d
 import numpy as np
 import matplotlib.pyplot as plt
 
-with open('./data/day18.txt', 'r') as f:
+with open('./AoCdata/2022/day18.txt', 'r') as f:
     data = f.read().split('\n')
 data = [(int(i.split(',')[0]), int(i.split(',')[1]), int(i.split(',')[2])) for i in data]
 caras_aux = [

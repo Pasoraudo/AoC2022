@@ -13,7 +13,7 @@ def rps2(a, b):
     return 6 + a % 3 + 1 #win
     
 d = {'A': 1, 'B': 2, 'C': 3, 'X': 1, 'Y': 2, 'Z': 3}
-with open('./AoCdata/day2.txt', 'r') as f:
+with open('./AoCdata/2022/day2.txt', 'r') as f:
     data = f.read().split('\n')
 data = [(d[i.split()[0]], d[i.split()[1]]) for i in data]
 prob1 = 0

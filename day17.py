@@ -7,7 +7,7 @@ def choca(rock):
             return True
     return False
 
-with open('./data/day17.txt', 'r') as f:
+with open('./AoCdata/2022/day17.txt', 'r') as f:
     jets = f.read()
 
 min_x, max_x = 0, 6

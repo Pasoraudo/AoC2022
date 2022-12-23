@@ -1,7 +1,7 @@
 import math
 import ast
 
-with open('./data/day13.txt', 'r') as f:
+with open('./AoCdata/2022/day13.txt', 'r') as f:
     data1 = f.read().split('\n\n')
 #data = [i.split('\n') for i in data]
 

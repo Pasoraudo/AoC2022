@@ -1,7 +1,7 @@
 import math
 import ast
 import numpy as np
-with open('./data/day14.txt', 'r') as f:
+with open('./AoCdata/2022/day14.txt', 'r') as f:
     data = f.read().split('\n')
 
 def sand_flow(coor, mapa):

@@ -1,7 +1,7 @@
 from shapely import Polygon, LineString
 import shapely.ops as so
 
-with open('./data/day15.txt', 'r') as f:
+with open('./AoCdata/2022/day15.txt', 'r') as f:
     data = f.read().split('\n')
 
 max_coor = 4000000

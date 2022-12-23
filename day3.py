@@ -1,4 +1,4 @@
-with open('./AoCdata/day3.txt', 'r') as f:
+with open('./AoCdata/2022/day3.txt', 'r') as f:
     data = f.read().split('\n')
 res1 = 0
 for pack in data:

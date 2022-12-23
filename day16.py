@@ -3,7 +3,7 @@ from heapq import heappop, heappush, _heapify_max
 import numpy as np
 
 #1914 es más pequeño que el resultado
-with open('./data/day16.txt', 'r') as f:
+with open('./AoCdata/2022/day16.txt', 'r') as f:
     data = f.read().split('\n')
 
 res = {}

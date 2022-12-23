@@ -91,7 +91,7 @@ def prob2(monkeys):
     print(ecuaciones)
     return calculadora_polaca_str(operacion)   
 
-with open('./data/day21.txt', 'r') as f:
+with open('./AoCdata/2022AoCdata/2022/day21.txt', 'r') as f:
     data = f.read().split('\n')
 monkeys = {}
 monkeys_waiting = []

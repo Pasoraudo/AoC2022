@@ -1,7 +1,7 @@
 import math
 
 
-with open('./data/day12.txt', 'r') as f:
+with open('./AoCdata/2022/day12.txt', 'r') as f:
     data = f.read().split('\n')
 
 def find(a):

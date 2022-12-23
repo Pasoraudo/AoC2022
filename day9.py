@@ -1,5 +1,5 @@
 import math
-with open('./AoCdata/day9.txt', 'r') as f:
+with open('./AoCdata/2022/day9.txt', 'r') as f:
     data = f.read().split('\n')
 data = [(i[0], int(i[2:])) for i in data]
 def rope_movements(rope):

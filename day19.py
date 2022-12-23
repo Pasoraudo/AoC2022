@@ -135,7 +135,7 @@ def solve(plano, time):
     return geodas_max
 
 
-with open('./data/day19.txt', 'r') as f:
+with open('./AoCdata/2022/day19.txt', 'r') as f:
     data = f.read().split('\n')
 
 blueprints = [] 
